@@ -1,0 +1,14 @@
+<app-child [msg]="fathermsg" (newEvent)="addItem($event)"></app-child>
+<br>
+<br>
+
+<div>
+    <h2>this is Father Component</h2>
+
+</div>
+
+<br>
+
+<div *ngFor="let item of items">
+    <p>{{item}}</p> <button (click)="RemoveItem(item)" >Remove Item</button>
+</div>

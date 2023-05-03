@@ -1,0 +1,12 @@
+<div>
+    <h1>this is Child Component</h1>
+    <br>
+    <h2>This is the message from father: {{msg}}</h2>
+</div>
+
+<div>
+    <label for="item-input">Add an Item:</label>
+    <input type="text" id="item-input" #newItem>
+    <button type="button" (click)="childfunction(newItem.value)">Add to father list</button>
+</div>
+---------------------------------------------------------------------------------------------------
